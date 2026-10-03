@@ -61,8 +61,13 @@ body{
     display:flex;
     flex-direction:column; 
     
-    justify-content:space-around;
-    align-self: center;
+    gap:0.3rem;
+    
+    align-self:center;
+    
+
+    /*decor*/ 
+    
     
     
     
@@ -70,9 +75,10 @@ body{
     
 }
 .hamburgare div{
-    height:10%;
-    background-color:grey;
-    align-self: space-evenly;
+    height:0.3rem;
+    background-color:rgb(75, 75, 75);
+    
+    border-radius: 1vh;
     
 }
 
