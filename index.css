@@ -118,6 +118,7 @@ header{
 
 
 .introduction{
+    margin-top:10rem;
     font-size:1.2rem;
     font-weight:800;
 
@@ -137,6 +138,8 @@ header{
 }
 
 .ludvig-background{
+    margin-top:2rem;
+
     /*decor*/
     height:10.5rem;
     width:10.5rem;
