@@ -1,0 +1,101 @@
+body{
+    font-family:"Poppins",sans-serif;
+    font-size:62.5% /*10px*/
+
+}
+
+.container{
+    /*We need 3 columns */ 
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    margin:46px 24px;
+    gap:1rem;
+    
+    
+
+
+}
+.navigation{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+
+.logotyp1{
+    font-size:1.2rem;
+    font-weight:800;
+
+    /*decor */ 
+    /* 1. Ange gradienten som en bakgrundsbild */
+    background-image: linear-gradient(to right, #13B0F5, #CA24B4);
+    
+    /* 2. Klipp bakgrunden så att den bara visas där texten är */
+    background-clip: text;
+    -webkit-background-clip: text; /* För äldre eller WebKit-baserade webbläsare */
+    
+    /* 3. Gör själva textfärgen genomskinlig så att gradienten syns */
+    color: transparent;
+    
+    
+
+}
+
+
+
+.hamburgare{
+    width:50px;
+    height:50px;
+    
+
+    
+    display:flex;
+    flex-direction:column; 
+    
+    justify-content:space-around;
+    align-self: center;
+    
+    
+    
+    
+    
+}
+.hamburgare div{
+    height:10%;
+    background-color:grey;
+    align-self: space-evenly;
+    
+}
+
+.hamburgare-meny{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+
+    gap:0.5rem;
+
+    /*Decor*/
+    font-size:1rem;
+    
+}
+
+.hamburgare-meny a{
+    color:inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation-logos{
+    align-self: center;
+
+    display:flex;
+    gap:5rem;
+}
+
+.navigation-logos img{
+    width:1rem;
+    
+}
