@@ -109,9 +109,10 @@ header{
     gap:5rem;
 }
 
-.navigation-logos svg{
-    width:2rem;
+.twitter, .linkedin, .github{
+    width: 2rem;
     align-self:center;
+    
     
 }
 
