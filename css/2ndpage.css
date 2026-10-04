@@ -39,3 +39,19 @@
     
     background-color: rgb(198, 198, 198);
 }
+
+.Copyright{
+    text-align:center;
+
+}
+.special-text{
+    background-image: linear-gradient(to right, #13B0F5, #E70FAA);
+    
+    /* 2. Klipp bakgrunden så att den bara visas där texten är */
+    background-clip: text;
+    -webkit-background-clip: text; /* För äldre eller WebKit-baserade webbläsare */
+    
+    /* 3. Gör själva textfärgen genomskinlig så att gradienten syns */
+    color: transparent;
+
+}
