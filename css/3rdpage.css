@@ -4,8 +4,8 @@ body{
 
 .icons{
     display:grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows:1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
     gap:0.5rem;
 
     grid-template-areas:
@@ -14,14 +14,18 @@ body{
     "vscode-icon git-icon github-icon greensock-icon";
 
     justify-items:center;
-}
-
-.icons img{
-    width:100px;
-    height:100px;
-    justify-items:center;
+    align-items:center;
+    width: 100%;
+    max-width: 100%;
     
 }
+
+.icons>*{ /*Applies this to its children */ 
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 100%;
+}
+
 
 
 /* .grid-container{
