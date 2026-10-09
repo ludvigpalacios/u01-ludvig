@@ -1,3 +1,23 @@
+
+.page-2-container{
+    /*Turn the whole description into flex*/
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+@media (min-width:600px){
+    .page-2-container{
+        max-width:60rem;
+        margin-left:10%;
+        
+
+
+    }   
+}
+
 .job-title{
     box-sizing: border-box;
     display:flex;
@@ -56,8 +76,4 @@
 
 }
 
-@media(max-width:730px){
-    .hidden {
-        display:none;
-    }
-}
+
