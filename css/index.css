@@ -20,7 +20,7 @@ header{
     
     /*Setting up a media query to change the fle direction to row when there's enough space */
     
-    @media (min-width:400px){
+    @media (min-width:730px){
         flex-direction:row; 
         
         /*It effectively mimics the requirent appereance from Pavans portfolio*/
@@ -91,7 +91,7 @@ header{
     border-radius: 1vh;
 
     /* Set a media query to hide the menu when there's enough space*/
-    @media (min-width:400px){
+    @media (min-width:730px){
         display:none;
     }
     
@@ -109,13 +109,20 @@ header{
     font-size:1rem;
 
     /* Set a media query to change the menu to rows when there's enough space */
-    @media (min-width:400px){
+    @media (min-width:730px){
         flex-direction:row; 
 
         /*Margin auto so that it moves far to the right along with the icons with the icons */
-        margin-left: auto;  
+        margin-right:2rem;
+        margin-left: auto;
+        
+        gap:5rem;
+        
 
-        /*Change the font weight and color*/ 
+        /*Change the font size and color*/ 
+        font-size:0.9rem;
+        color:grey;
+        
 
     }
     
@@ -134,6 +141,8 @@ header{
 
     display:flex;
     gap:5rem;
+
+    
 }
 
 .twitter, .linkedin, .github{
