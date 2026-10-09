@@ -63,8 +63,12 @@ header{
     
     /* 3. Gör själva textfärgen genomskinlig så att gradienten syns */
     color: transparent;
-    @media (min-width:600px){
-        font-size:1.2rem;
+    @media (min-width:730px){
+        /*Add margin */ 
+        margin-left:80%;
+
+        /*Change its size */
+        font-size:1.5rem;
     }
     
     
