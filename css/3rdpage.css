@@ -26,6 +26,12 @@ body{
     max-width: 100%;
 }
 
+@media(max-width:730px){
+    .hidden {
+        display:none;
+    }
+}
+
 
 
 /* .grid-container{
