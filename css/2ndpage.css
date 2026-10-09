@@ -75,5 +75,18 @@
     color: transparent;
 
 }
+.Copyright{
+    /*Höja margin-top från resten av sidan */ 
+    margin-top:1%;
+    
+}
 
+/*Dölj den sista texten på första sidan med max-width */ 
+@media (min-width:600px){
+    .Copyright{
+        margin-top:10rem;
+        font-size:0.9rem;
+    }
+
+}
 

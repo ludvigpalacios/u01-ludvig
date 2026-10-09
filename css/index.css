@@ -8,6 +8,12 @@ body{
     
 
 }
+main{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 
 header{
     /*We need 3 columns */ 
@@ -230,6 +236,23 @@ header{
     border-radius: 50%;
     
 }
+.Copyright-start{
+    /*Höja margin-top från resten av sidan */ 
+    
+    
+}
+
+
+.Copyright-start{
+    /*Höja margin-top från resten av sidan */ 
+    margin-top:15%;
+    align-self:center;
+    @media (max-width:600px){
+        display:none;
+    }
+
+}
+
 /*Media query när man ökar width: */ 
 @media (min-width:600px){
     .intro{
@@ -259,21 +282,17 @@ header{
             height:12.5rem;
             width:12.5rem;
         }
-        
+       
     }
+     .Copyright-start{
+            font-size:0.9rem;
+            
+        }
 
 }
 
-.Copyright{
-    /*Höja margin-top från resten av sidan */ 
-    margin-top:15%;
-}
+
 
 /*Dölj den sista texten på första sidan med max-width */ 
-@media (max-width:600px){
-    .Copyright{
-        display:none;
-    }
 
-}
 
