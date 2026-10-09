@@ -55,3 +55,9 @@
     color: transparent;
 
 }
+
+@media(max-width:730px){
+    .hidden {
+        display:none;
+    }
+}
