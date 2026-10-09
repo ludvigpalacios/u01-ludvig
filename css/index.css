@@ -261,3 +261,17 @@ header{
     }
 
 }
+
+.Copyright{
+    /*Höja margin-top från resten av sidan */ 
+    margin-top:15%;
+}
+
+/*Dölj den sista texten på första sidan med max-width */ 
+@media (max-width:600px){
+    .Copyright{
+        display:none;
+    }
+
+}
+
