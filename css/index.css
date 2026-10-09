@@ -142,12 +142,36 @@ header{
     display:flex;
     gap:5rem;
 
+    @media (min-width:400px){
+        gap:1.2rem;
+        
+        
+    }
     
 }
 
 .twitter, .linkedin, .github{
     width: 2rem;
-    align-self:center;
+    align-self:center;    
+}
+
+@media (min-width:730px){
+    .twitter, .linkedin, .github{
+        width: 1.8rem;
+        align-self:center; 
+    }
+    /* change the order of the logos */ 
+     
+    /* Två sätt att göra det; ägga en logo längst först, eller vid ordning 1,2,3 för varje element
+    .github{
+        order:-1;
+    }
+    /*.twitter{
+        order:0;
+    }
+    .linkedin{
+        order:3;
+    }*/
     
     
 }
