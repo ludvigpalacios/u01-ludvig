@@ -1,5 +1,25 @@
-body{
+.page-3{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+}
 
+.page-3-contents{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    /*Justera margin för icons och textinnehåll */ 
+    margin:1px 8%;
+
+}
+
+.page-3-contents>h2{
+    margin-bottom:0px;
+    
+    /*Make the text bigger after a certain width */ 
+    @media(min-width:600px){
+        font-size: 3rem;
+    }
 }
 
 .icons{
@@ -12,6 +32,15 @@ body{
     "html5-icon css-icon javascript-icon react-icon"
     "unknown1-icon unknown2-icon bootstrap-icon sass-icon"
     "vscode-icon git-icon github-icon greensock-icon";
+    
+    @media(min-width:600px){
+        /*Öka avståndet till text */
+        margin-top:5rem;
+
+        /*Öka antalet columns med 2 och minska rows med 1*/
+        grid-template-columns:repeat(6, minmax(0, 1fr));
+        grid-template-rows: repeat(2, auto);
+    }
 
     justify-items:center;
     align-items:center;
@@ -24,6 +53,11 @@ body{
     min-width: 0px;
     min-height: 0px;
     max-width: 100%;
+
+    /*Make the icons smaller after a certain width */
+    @media (min-width:600px){
+        max-width: 60%;
+    }
 }
 
 @media(max-width:730px){
