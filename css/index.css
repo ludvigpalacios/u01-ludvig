@@ -142,7 +142,7 @@ header{
     display:flex;
     gap:5rem;
 
-    @media (min-width:400px){
+    @media (min-width:73rempx){
         gap:1.2rem;
         
         
@@ -176,14 +176,20 @@ header{
     
 }
 
-
-
+.intro{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+}
 .introduction{
     margin-top:10rem;
     font-size:1.2rem;
     font-weight:800;
 
 }
+
+
+
 
 .special{
 
@@ -221,4 +227,37 @@ header{
     width:10rem;
     border-radius: 50%;
     
+}
+/*Media query när man ökar width: */ 
+@media (min-width:600px){
+    .intro{
+        flex-direction:row;
+        justify-content:center;
+        align-content: center;
+        .introduction{
+            display:flex;
+            margin:0px;
+            margin-right:10rem;
+            /*Öka font size */ 
+            font-size:2rem;
+
+
+        }
+        .introduction div{
+            align-self:end;
+        }
+        /*Öka profilens size */
+        .ludvig-background{
+            width:13.2rem;
+            height:13.2rem;
+            
+            
+        }
+        .ludvig{
+            height:12.5rem;
+            width:12.5rem;
+        }
+        
+    }
+
 }
