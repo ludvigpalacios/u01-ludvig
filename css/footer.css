@@ -1,5 +1,8 @@
 footer{
     margin-top:1rem;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
 }
 
 .footer-text{
@@ -10,5 +13,14 @@ footer{
 
     margin-top:10rem;
     margin-bottom:10rem;
+
+    @media (min-width:600px){
+        font-size:2rem;
+        color:#1E0E62;
+
+        h4{
+            margin:1rem auto;
+        }
+    }
     
 }

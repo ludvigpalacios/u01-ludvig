@@ -9,7 +9,14 @@
     display:flex;
     flex-direction:column;
     /*Justera margin för icons och textinnehåll */ 
-    margin:1px 8%;
+    
+    @media(max-width:730px){
+        margin:1px 8%;
+    }
+    @media(min-width:730px){
+        margin:1px 10rem;
+    }
+    
 
 }
 
@@ -20,6 +27,7 @@
     @media(min-width:600px){
         font-size: 3rem;
     }
+    
 }
 
 .icons{
