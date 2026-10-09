@@ -239,12 +239,6 @@ header{
     border-radius: 50%;
     
 }
-.Copyright-start{
-    /*Höja margin-top från resten av sidan */ 
-    
-    
-}
-
 
 .Copyright-start{
     /*Höja margin-top från resten av sidan */ 
@@ -290,9 +284,15 @@ header{
      .Copyright-start{
             font-size:0.9rem;
             
-        }
+    }
+    h2{
+        color:#42446E;
+    }
+
+
 
 }
+
 
 
 
