@@ -18,6 +18,14 @@ header{
     margin:46px 24px;
     gap:1rem;
     
+    /*Setting up a media query to change the fle direction to row when there's enough space */
+    
+    @media (min-width:400px){
+        flex-direction:row; 
+        
+        /*It effectively mimics the requirent appereance from Pavans portfolio*/
+
+    }
     
     
 
@@ -27,6 +35,8 @@ header{
     box-sizing: border-box;
     display:flex;
     justify-content: space-between;
+
+    /*Shrink the navigation so the hamburgare-menu fits, */ 
     
     
 }
@@ -79,6 +89,11 @@ header{
     background-color:rgb(75, 75, 75);
     
     border-radius: 1vh;
+
+    /* Set a media query to hide the menu when there's enough space*/
+    @media (min-width:400px){
+        display:none;
+    }
     
 }
 
@@ -92,8 +107,20 @@ header{
 
     /*Decor*/
     font-size:1rem;
+
+    /* Set a media query to change the menu to rows when there's enough space */
+    @media (min-width:400px){
+        flex-direction:row; 
+
+        /*Margin auto so that it moves far to the right along with the icons with the icons */
+        margin-left: auto;  
+
+        /*Change the font weight and color*/ 
+
+    }
     
 }
+
 
 .hamburgare-meny a{
     color:inherit;
