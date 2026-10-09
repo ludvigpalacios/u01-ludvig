@@ -3,8 +3,28 @@ html{
     font-size:62.5% /*10px*/
 }
 
+:root {
+  --background: #ffffff;
+  --text: #1f1f1f;
+  --muted-text: #6b6b6b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --text: #f1f1f1;
+    --muted-text: #b3b3b3;
+  }
+}
+
+
 body{
     font-family:"Poppins",sans-serif;
+
+    /*Adding dark mode */
+      background-color: var(--background);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
     
 
 }
@@ -149,6 +169,9 @@ header{
     text-decoration: none;
     font-weight: 600;
     align-self:center;
+
+    /*Dark-mode */ 
+    color: var(--muted-text);
 }
 
 .navigation-logos{
@@ -297,9 +320,5 @@ header{
 
 }
 
-
-
-
-/*Dölj den sista texten på första sidan med max-width */ 
 
 
