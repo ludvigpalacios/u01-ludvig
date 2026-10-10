@@ -87,3 +87,15 @@
 
 }
 
+/*Fill the classes icons along with its children to sert color */
+.Left-side svg, .Left-side svg>*, .Right-side svg{
+    fill:#454545;
+}
+
+@media (prefers-color-scheme: dark){
+    /*When dark, change the color within WCAG */ 
+    .Left-side svg,.Left-side svg>*, .Right-side svg{
+        fill:#FFFFFF;
+    }
+}
+
