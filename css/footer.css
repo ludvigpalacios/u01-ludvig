@@ -23,5 +23,11 @@ footer{
             color:#1E0E62;
         }
     }
+    @media(prefers-color-scheme: dark){
+        color:#937EF1;
+        h4{
+            color:#937EF1;
+        }
+    }
     
 }

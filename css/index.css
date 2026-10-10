@@ -8,6 +8,8 @@ html{
   --text: #1f1f1f;
   --muted-text: #6b6b6b;
   --muted-header2: #42446E;
+  --muted-header4:#1E0E62;
+  --hamburger: #4b4b4b;
 
 
 }
@@ -19,6 +21,7 @@ html{
     --muted-text: #b3b3b3;
     /*Change the headers color */
     --muted-header2: #D9D9D9;
+    --hamburger:#969696;
   }
 }
 
@@ -126,7 +129,8 @@ header{
 }
 .hamburgare div{
     height:0.3rem;
-    background-color:rgb(75, 75, 75);
+    /*Creating a var for the hamburger menu */ 
+    background-color: var(--hamburger);
     
     border-radius: 1vh;
 
