@@ -128,7 +128,7 @@
         text{ /* apply to its children aswell*/
             margin: 1px auto; 
             font-size:0.8rem;
-            color:rgb(58, 58, 114);
+            color:#3a3a72;
             font-weight:400;
         }
         text>*{
@@ -146,6 +146,19 @@
     box-sizing: border-box;
     display:flex;
     justify-content: space-between;
+}
+/*Alternate method for black and white icons, using filter and invert */
+@media(prefers-color-scheme: dark){
+    .chain-icon,.tile-github-icon{
+        filter: invert(1);
+    }
+    .project-tile{
+        background-color: #363636;
+        color:#CCCCCC;
+        text{    
+        color:#7C7CB6;
+        }
+    }
 }
 
 .tile-navigation a{
