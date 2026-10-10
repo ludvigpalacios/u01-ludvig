@@ -59,7 +59,30 @@
     width: 100%;
     max-width: 100%;
     
+
+    
 }
+
+
+
+/*Create root variable where it's initially black */
+:root{
+    --icon-color: #000000;
+
+}
+/* Change this variable colors to white within a media query set for darkmode */ 
+@media (prefers-color-scheme: dark){
+    :root{
+        --icon-color: #ffffff;
+    }
+    
+}
+/*set fill color for svg github and greensock*/
+.github-icon, .greensock-icon{
+    /*WCAG icons, make greensock and github adjusted to darkmode*/
+    fill:var(--icon-color);
+}
+
 
 .icons>*{ /*Applies this to its children */ 
     min-width: 0px;

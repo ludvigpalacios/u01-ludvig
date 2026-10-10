@@ -9,7 +9,7 @@ html{
   --muted-text: #6b6b6b;
   --muted-header2: #42446E;
 
-  /* */
+
 }
 
 @media (prefers-color-scheme: dark) { /*When the user has dark mode, change the global variables values */ 
