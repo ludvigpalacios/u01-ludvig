@@ -6,10 +6,11 @@ html{
 :root { /*Creating clobal variables one can use multiple times in every element */ 
   --background: #ffffff;
   --text: #1f1f1f;
-  --muted-text: #6b6b6b;
+  --muted-text: #5C5C5C;
   --muted-header2: #42446E;
   --muted-header4:#1E0E62;
   --hamburger: #4b4b4b;
+  --hamburger-icons:#5C5C5C;
 
 
 }
@@ -18,11 +19,15 @@ html{
   :root {
     --background: #121212;
     --text: #f1f1f1;
-    --muted-text: #b3b3b3;
+    --muted-text: #D6D6D6;
     /*Change the headers color */
     --muted-header2: #D9D9D9;
     --hamburger:#969696;
+    --hamburger-icons:#969696;
   }
+    .twitter>*, .linkedin>*>*, .github>*{
+        fill:var(--hamburger-icons);
+    }
 }
 
 
@@ -165,10 +170,11 @@ header{
 
         /*Change the font size and color*/ 
         font-size:0.9rem;
-        color:grey;
+        
         
 
     }
+
     
 }
 
@@ -183,6 +189,8 @@ header{
     color: var(--muted-text);
     /*Avoids having to use a media query that changes the color to dark mode  in all other elements */ 
 }
+
+
 
 .navigation-logos{
     align-self: center;
@@ -200,7 +208,12 @@ header{
 
 .twitter, .linkedin, .github{
     width: 2rem;
-    align-self:center;    
+    align-self:center;  
+      
+}
+.twitter>*, .linkedin>*>*, .github>*{
+    fill:var(--hamburger-icons);
+
 }
 
 @media (min-width:730px){
