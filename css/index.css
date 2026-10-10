@@ -3,17 +3,22 @@ html{
     font-size:62.5% /*10px*/
 }
 
-:root {
+:root { /*Creating clobal variables one can use multiple times in every element */ 
   --background: #ffffff;
   --text: #1f1f1f;
   --muted-text: #6b6b6b;
+  --muted-header2: #42446E;
+
+  /* */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) { /*When the user has dark mode, change the global variables values */ 
   :root {
     --background: #121212;
     --text: #f1f1f1;
     --muted-text: #b3b3b3;
+    /*Change the headers color */
+    --muted-header2: #D9D9D9;
   }
 }
 
@@ -22,9 +27,9 @@ body{
     font-family:"Poppins",sans-serif;
 
     /*Adding dark mode */
-      background-color: var(--background);
-    color: var(--text);
-    font-family: "Poppins", sans-serif;
+    background-color: var(--background); /*Setting the background to the varible background */
+    color: var(--text); /*Setting the text color to the variable text in root */
+    
     
 
 }
@@ -170,8 +175,9 @@ header{
     font-weight: 600;
     align-self:center;
 
-    /*Dark-mode */ 
+    /* Sets the color to the varible muted text*/
     color: var(--muted-text);
+    /*Avoids having to use a media query that changes the color to dark mode  in all other elements */ 
 }
 
 .navigation-logos{
@@ -313,7 +319,8 @@ header{
             
     }
     h2{
-        color:#42446E;
+        /*Replace the color to a variable set that changes dending if set on lightmode/darkmode*/
+        color:var(--muted-header2);
     }
 
 
