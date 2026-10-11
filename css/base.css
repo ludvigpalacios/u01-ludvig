@@ -266,6 +266,8 @@ header{
     margin-top:10rem;
 
 }
+
+
 .introduction{
     margin-top:10rem;
     font-size:1.2rem;
@@ -290,7 +292,7 @@ header{
 }
 
 .ludvig-background{
-    margin-top:2rem;
+    
 
     /*decor*/
     height:10.5rem;
@@ -300,9 +302,11 @@ header{
     /* 2. Klipp bakgrunden så att den bara visas där texten är */
 
     display:flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    align-self:center;
     
     
 }
@@ -381,6 +385,26 @@ header{
 
 
 }
+@media (min-width:1200px){
+    /*Öka profilens size */
+    .intro{
+        .ludvig-background{
+            width:17.4rem;
+            height:17.4rem;
+            
+            
+        }
+        .ludvig{
+            height:16.5rem;
+            width:16.5rem;
+        }
+
+    }
+       
+}
+
+
+
 
 
 
