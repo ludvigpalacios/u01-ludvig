@@ -10,7 +10,8 @@ Svar: Jag använde mig av lighthouse där den bad mig att lägga till labels fö
 Användbarhet. Vilka UX- eller UI-principer känner du igen i Pawans design? Är det något du hade gjort annorlunda, och varför?
 Svar: Jag förstår inte riktigt frågan. 
 Styrkor och brister. Vad blev bra, och vad skulle du bygga om med mer tid?
-Svar: Om jag skulle få mer tid skulle jag lägga javascript, optimera koden speciellt de med media queries så de inte var så röriga, optimera min profilbild vilket var först stort och minskade webbsidans prestanda. 
+Svar: Om jag skulle få mer tid skulle jag lägga javascript, optimera koden speciellt de med media queries så de inte var så röriga, optimera min profilbild vilket var först stort och minskade webbsidans prestanda. Jag blev också förvirrad med klassnamn som egentligen betyder "class" namn och inte skolans klass namn, så jag skrev några klass i svenska och några i engelska. 
+
 AI-verktyg. Om du använt dem: till vad, och vad ändrade du i det som genererades?
 Svar: Jag har inte använt mycket AI, då jag ogillar vibe koda, det slösar mycket tid på att prompta och när det handlar om the basics så är det bättre att skriva för hand och testa, steg för steg. 
 
