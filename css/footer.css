@@ -13,19 +13,35 @@ footer{
 
     margin-top:10rem;
     margin-bottom:10rem;
+    
+
+    .footer-question-text{
+        color:var(--text);
+        font-weight:600;
+    }
+    .footer-or-text{
+        color:var(--muted-text);
+    }
+
 
     @media (min-width:600px){
         font-size:2rem;
-        color:#1E0E62;
-
-        span{
-            margin:1rem auto;
+        
+        .footer-or-text, .footer-question-text{
             color:#1E0E62;
+            margin:1rem auto;
+            
+        }
+        .footer-question-text, .special-text{
+            font-weight:700;
+        }
+        .footer-or-text{
+            display:none;
         }
     }
     @media(prefers-color-scheme: dark){
         color:#937EF1;
-        span{
+        .footer-question-text, .footer-or-text{
             color:#937EF1;
         }
     }
