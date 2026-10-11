@@ -22,7 +22,7 @@
 
 
 @media (min-width:600px){
-    .page-4-contents>text{
+    .page-4-contents>span{ /*Replacing text with span*/
         color:#666666;
         margin-bottom:4rem;
         margin-left:0.1rem;
@@ -93,10 +93,10 @@
     flex-wrap:nowrap;
     margin-top:0.1rem;
 
-    text{ /* apply to its children aswell*/
+    span{ /* apply to its children aswell*/
         font-weight:600;
     }
-    text>*{
+    span>*{
         font-weight:300;
 
     }
@@ -121,13 +121,13 @@
 
         }
 
-        text{ /* apply to its children aswell*/
+        span{ /* apply to its children aswell*/
             margin: 1px auto; 
             font-size:0.8rem;
             color:#3a3a72;
             font-weight:400;
         }
-        text>*{
+        span>*{
             font-weight:200;
 
         }
@@ -151,7 +151,7 @@
     .project-tile{
         background-color: #363636;
         color:#CCCCCC;
-        text{    
+        span{    
         color:#7C7CB6;
         }
     }
