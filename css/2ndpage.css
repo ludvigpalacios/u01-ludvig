@@ -30,6 +30,8 @@
     display:flex;
 
     justify-content:space-between;
+    /*Increase margin top */
+    margin-top:1rem;
 
 }
 
@@ -38,12 +40,26 @@
     display:flex;
     flex-direction:column;
     gap:1rem;
+    
 
     @media (min-width:400px){
         flex-direction:row;
     }
     
 
+}
+
+/*Fill the classes icons along with its children to sert color */
+.Left-side svg, .Left-side svg>*, .Right-side svg{
+    fill:#454545;
+    align-self:center;
+}
+
+@media (prefers-color-scheme: dark){
+    /*When dark, change the color within WCAG */ 
+    .Left-side svg,.Left-side svg>*, .Right-side svg{
+        fill:#FFFFFF;
+    }
 }
 
 .job-description, .location-description {
@@ -95,15 +111,5 @@
 
 }
 
-/*Fill the classes icons along with its children to sert color */
-.Left-side svg, .Left-side svg>*, .Right-side svg{
-    fill:#454545;
-}
 
-@media (prefers-color-scheme: dark){
-    /*When dark, change the color within WCAG */ 
-    .Left-side svg,.Left-side svg>*, .Right-side svg{
-        fill:#FFFFFF;
-    }
-}
 
