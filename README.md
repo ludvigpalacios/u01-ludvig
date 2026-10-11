@@ -13,3 +13,5 @@ Styrkor och brister. Vad blev bra, och vad skulle du bygga om med mer tid?
 Svar: Om jag skulle få mer tid skulle jag lägga javascript, optimera koden speciellt de med media queries så de inte var så röriga, optimera min profilbild vilket var först stort och minskade webbsidans prestanda. 
 AI-verktyg. Om du använt dem: till vad, och vad ändrade du i det som genererades?
 Svar: Jag har inte använt mycket AI, då jag ogillar vibe koda, det slösar mycket tid på att prompta och när det handlar om the basics så är det bättre att skriva för hand och testa, steg för steg. 
+
+Netlify: https://u01-ludvig-portfolio.netlify.app/
