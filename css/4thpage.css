@@ -10,6 +10,9 @@
         margin-bottom:5rem;
     }
 }*/
+.page-4-contents{
+    margin:auto 1.5rem;
+}
 
 @media (min-width:700px){
     .page-4-contents{
@@ -69,13 +72,6 @@
     /*Adding shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3vh;
-
-
-
-
-    
-
-    
     
 }
 .background-image{
