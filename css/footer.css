@@ -18,14 +18,14 @@ footer{
         font-size:2rem;
         color:#1E0E62;
 
-        h4{
+        span{
             margin:1rem auto;
             color:#1E0E62;
         }
     }
     @media(prefers-color-scheme: dark){
         color:#937EF1;
-        h4{
+        span{
             color:#937EF1;
         }
     }
