@@ -1,6 +1,15 @@
 html{
     
-    font-size:62.5% /*10px*/
+    font-size:62.5%; /*10px*/
+    @media(min-width:400px){
+        font-size:80%;
+    }
+    @media(min-width:600px){
+        font-size:90%;
+    }
+    @media(min-width:1920px){
+        font-size:100%;
+    }
 }
 
 :root { /*Creating clobal variables one can use multiple times in every element */ 
@@ -37,6 +46,8 @@ body{
     /*Adding dark mode */
     background-color: var(--background); /*Setting the background to the varible background */
     color: var(--text); /*Setting the text color to the variable text in root */
+
+    
     
     
 
@@ -211,6 +222,7 @@ header{
     align-self:center;  
       
 }
+/*Pointing to the icons last children in order to change their colors */
 .twitter>*, .linkedin>*>*, .github>*{
     fill:var(--hamburger-icons);
 
@@ -241,6 +253,8 @@ header{
     box-sizing: border-box;
     display:flex;
     flex-direction: column;
+    margin:0px 0.5rem; 
+
 }
 .introduction{
     margin-top:10rem;
