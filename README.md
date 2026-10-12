@@ -1,18 +1,46 @@
-# u01-ludvig
-Från skiss till kod. Hur gick du tillväga? Var det något i skissen som var svårt att översätta till HTML och CSS, och hur löste du det?
-Svar: Inte så mycket, det svåra var att fixa färgen som fanns i source för vanligt paragraphs och text, vilket jag ändrade för att följa WCAG. Det med gradient var också utmanande, jag fick googla lite och försöka förstå hur den fungerar. 
-Semantik. Vilka HTML-element valde du för sidans olika delar, och varför just de? Var landade du i ett div för att inget bättre fanns?
-Svar: Jag visste inte rikgit vilken html element jag skulle använda för varje side då ingen av de hade någon <aside> så jag använde <section> för det mesta, och korresponderande element som <a>
-Layout. Var använde du Flexbox, var använde du Grid, och vad avgjorde valet? Hur gjorde du sidan responsiv, och varför lade du brytpunkterna där du gjorde?
-Svar: jag tycker att en blandning av de två hjälper mycket, jag vill för det mesta använda grid för its parent, speciellt i sida 3 och 4 då jag vill att de ska hålla sig i linje, sen ville jag använda flex för its children då jag vill att de krypmer eller rör sig beroende på användarens width. På navigationen vill jag gärna använda flex då den behöver anpassas till width.
-Tillgänglighet. Vad har du gjort för att sidan ska gå att använda för fler? Hur testade du det, och vad visade testet? Vad återstår?
-Svar: Jag använde mig av lighthouse där den bad mig att lägga till labels för mina SVGs, där använde jag mig av ARIA-label vilket var nytt för mig, men det hjälpte read alout verktygen samt AI agents veta vad svg var. Jag använde mig också av WCAG contrast checker där jag anpassade färgerna så att contrast ration var minst 4:51, då såg färgerna bättre ut och mer anpassade för de med synproblem.  Den som gav mig mest utmaning var W3 validator där jag fick 130 errors, jag fick ändra många <text> til <span> samt andra korrigeringar, men jag lyckades bli av med de flesta errors till slut. 
-Användbarhet. Vilka UX- eller UI-principer känner du igen i Pawans design? Är det något du hade gjort annorlunda, och varför?
-Svar: Jag förstår inte riktigt frågan. 
-Styrkor och brister. Vad blev bra, och vad skulle du bygga om med mer tid?
-Svar: Om jag skulle få mer tid skulle jag lägga javascript, optimera koden speciellt de med media queries så de inte var så röriga, optimera min profilbild vilket var först stort och minskade webbsidans prestanda. Jag blev också förvirrad med klassnamn som egentligen betyder "class" namn och inte skolans klass namn, så jag skrev några klass i svenska och några i engelska. 
-
-AI-verktyg. Om du använt dem: till vad, och vad ändrade du i det som genererades?
-Svar: Jag har inte använt mycket AI, då jag ogillar vibe koda, det slösar mycket tid på att prompta och när det handlar om the basics så är det bättre att skriva för hand och testa, steg för steg. 
-
 Netlify: https://u01-ludvig-portfolio.netlify.app/
+
+u01-ludvig
+Från skiss till kod
+Svar:
+Det var inte så mycket i skissen som var svårt att översätta till HTML och CSS. Det svåraste var att få till rätt färger jämfört med source-designen, särskilt för vanlig text och paragrafer. Jag behövde ändra några färger för att de skulle uppfylla WCAG-kraven för kontrast. Gradienten var också utmanande i början. Jag fick googla och läsa för att förstå hur linear-gradient, background-clip: text och transparent textfärg fungerade tillsammans.
+
+Semantik
+Svar:
+I början var jag osäker på vilka HTML-element jag skulle använda för de olika delarna av sidorna. Eftersom ingen av sidorna innehöll innehåll som passade i en <aside>, använde jag <section> för det mesta. Jag använde också korresponderande element där det var möjligt, till exempel <a> för länkar och <header>, <main> och <footer> för sidans huvuddelar. Jag lärde mig att det är bättre att använda semantiska element när de finns, och använda <div> när jag bara behöver en behållare för layout eller styling.
+
+Layout
+Svar:
+Jag tycker att en blandning av Flexbox och Grid fungerar bäst. Jag använde mest Grid för förälderelement, särskilt på sida 3 och 4, eftersom jag ville att innehållet skulle hålla sig i rader och kolumner. Sedan använde jag Flexbox för barnen inuti griden, eftersom jag ville att de skulle kunna krympa, flytta sig eller centreras beroende på skärmens bredd.
+
+På navigationen valde jag Flexbox eftersom den behöver anpassa sig mycket efter skärmens bredd. Jag använde media queries för att ändra flex-riktning, dölja hamburgermenyn på större skärmar och justera mellanrum och storlekar. Brytpunkterna lade jag där layouten började se trasig eller för trång ut, till exempel runt 400px och 730px, istället för att bara följa vanliga standardvärden.
+
+Tillgänglighet
+Svar:
+<img width="700" height="182" alt="image" src="https://github.com/user-attachments/assets/bcddb13c-1942-4868-93f8-2ba09873c863" />
+Jag använde Lighthouse för att testa sidan. Där fick jag tips om att lägga till labels för mina SVG-ikoner. Eftersom SVG-element inte använder alt på samma sätt som <img>, lärde jag mig att använda role="img" och aria-label. Det var nytt för mig, men det hjälpte skärmläsare och Read Aloud-verktyg att förstå vad ikonerna föreställer.
+
+Jag använde också WCAG Contrast Checker för att kolla färgkontrasten. Jag anpassade flera färger så att kontrasten blev minst 4.5:1, vilket gjorde texten tydligare och bättre anpassad för personer med nedsatt syn.
+
+<img width="1123" height="640" alt="image" src="https://github.com/user-attachments/assets/e44288c5-8313-42b6-9370-33035d95ae45" />
+
+Den största utmaningen var W3C-validatorn. Jag började med ungefär 130 errors och fick ändra många <text>-element till <span>, fixa felaktig nestning och byta alt till aria-label på SVG:er. Jag lyckades bli av med de flesta felen, men det visade mig hur viktigt det är att skriva korrekt och semantisk HTML från början.
+
+Användbarhet
+Svar:
+Jag känner igen flera UX- och UI-principer i Pawans design. Sidan har en tydlig hierarki med stor rubrik, kort introduktion och tydliga sektioner. Färgerna och gradienten används för att skapa visuell igenkänning, medan mycket vit yta gör att innehållet inte känns överbelastat. Navigationen är också enkel och återanvänds på flera sidor, vilket gör det lättare att förstå var man befinner sig.
+
+Om jag hade gjort något annorlunda skulle jag kanske ha gjort navigationen ännu tydligare på mobil, till exempel med en riktig hamburgermeny som öppnar och stänger länkarna. Jag skulle också ha lagt mer fokus på konsekventa marginaler och avstånd mellan sektionerna, eftersom det påverkar hur lätt sidan är att läsa.
+
+Styrkor och brister
+Svar:
+Det som blev bra var att sidan blev responsiv, att jag fick till en fungerande dark mode och att jag lärde mig använda både Flexbox och Grid i olika situationer. Jag är också nöjd med att jag fixade många tillgänglighets- och valideringsfel, även om det tog tid.
+
+Om jag hade mer tid skulle jag vilja lägga till mer JavaScript, till exempel en fungerande hamburgermeny och möjligen en knapp för att växla mellan light och dark mode. Jag skulle också vilja optimera koden, särskilt media queries, eftersom de blev ganska röriga mot slutet. Profilbilden var också för stor i början och påverkade webbsidans prestanda, så den skulle jag optimera mer.
+
+En annan sak jag skulle göra annorlunda är att vara mer konsekvent med klassnamn. Jag blev förvirrad av att “klass” i CSS betyder class name och inte skolklass, så jag skrev vissa klassnamn på svenska och andra på engelska. Nästa gång skulle jag använda engelska genomgående och följa samma namngivningsstil.
+
+AI-verktyg
+Svar:
+Jag har inte använt AI särskilt mycket under projektet, eftersom jag ogillar “vibe coding”. Jag tycker att det ofta tar mycket tid att skriva bra prompts, och när det handlar om grunderna tycker jag att det är bättre att skriva koden själv, testa och felsöka steg för steg. Jag har dock använt AI som stöd för att snygga till denna readme, kunna förklara koncept, till exempel hur CSS-variabler, dark mode, order och SVG-tillgänglighet fungerar. Jag ändrade alltid det genererade svaret så att det passade min egen kod och min egen stil.
+
