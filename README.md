@@ -232,7 +232,7 @@ Navigationen är också enkel och återanvänds på flera sidor, vilket gör det
 
 ## AI-verktyg
 
-Jag har inte använt AI särskilt mycket under projektet, eftersom jag ogillar “vibe coding”. Jag tycker att det ofta tar mycket tid att skriva bra prompts, och när det handlar om grunderna är det bättre att skriva koden själv, testa och felsöka steg för steg.
+Jag har inte använt AI särskilt mycket under projektet förutom till att snygga till denna readme, eftersom jag ogillar “vibe coding”. Jag tycker att det ofta tar mycket tid att skriva bra prompts, och när det handlar om grunderna är det bättre att skriva koden själv, testa och felsöka steg för steg.
 
 Jag har dock använt AI som stöd för att förklara koncept, till exempel CSS-variabler, dark mode, `order` och SVG-tillgänglighet. Jag har också använt det för att hjälpa till att strukturera denna README. Jag ändrade alltid det genererade svaret så att det passade min egen kod, mina erfarenheter och min skrivstil.
 
