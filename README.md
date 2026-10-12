@@ -162,6 +162,7 @@ För vissa enkla svartvita SVG-ikoner använde jag även `filter: invert(1)` i d
 Jag använde Lighthouse, WCAG Contrast Checker och W3C-validatorn för att testa och förbättra sidan.
 
 Lighthouse påpekade bland annat att SVG-ikonerna behövde tillgängliga namn. Eftersom SVG inte använder `alt` på samma sätt som `<img>`, lärde jag mig att använda `role="img"` och `aria-label`:
+<img width="1123" height="640" alt="image" src="https://github.com/user-attachments/assets/5bf6d306-810e-4768-b6b8-05826bdd66a3" />
 
 ```html
 <svg class="github" role="img" aria-label="GitHub" viewBox="0 0 24 24">
