@@ -7,6 +7,10 @@
 
 **Live-sida:** [https://u01-ludvig-portfolio.netlify.app/](https://u01-ludvig-portfolio.netlify.app/)
 
+https://ludvigpalacios.github.io/u01-ludvig/
+<img width="1767" height="891" alt="image" src="https://github.com/user-attachments/assets/7d059c5a-dbaa-4208-9cc9-18f2043c1bf8" />
+
+
 En responsiv portfolio-webbplats byggd med HTML, CSS och JavaScript. Projektet är en översättning av en designskiss till kod, med fokus på layout, dark mode, tillgänglighet och anpassning för olika skärmstorlekar.
 
 ```mermaid
