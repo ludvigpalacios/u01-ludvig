@@ -158,7 +158,7 @@ För vissa enkla svartvita SVG-ikoner använde jag även `filter: invert(1)` i d
 ---
 
 ## Tillgänglighet
-
+<img width="700" height="182" alt="image" src="https://github.com/user-attachments/assets/62ab973a-ff5c-4129-9445-f661be37bdb4" />
 Jag använde Lighthouse, WCAG Contrast Checker och W3C-validatorn för att testa och förbättra sidan.
 
 Lighthouse påpekade bland annat att SVG-ikonerna behövde tillgängliga namn. Eftersom SVG inte använder `alt` på samma sätt som `<img>`, lärde jag mig att använda `role="img"` och `aria-label`:
